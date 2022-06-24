@@ -1,0 +1,322 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../webfonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins Light;
+  src: url("../webfonts/Poppins-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper > .toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.wrapper > .toggle-button > .bar {
+  height: 3px;
+  width: 100px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+header {
+  height: 70px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.164);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.164);
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+.logo {
+  line-height: 70px;
+}
+
+.logo > i {
+  font-size: 27px;
+  color: #F85A40;
+}
+
+.logo > a {
+  font-size: 27px;
+  color: #000;
+  font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.logo > a:hover {
+  color: #F85A40;
+}
+
+.menu-btn > i {
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 40px;
+}
+
+nav > input {
+  display: none;
+}
+
+nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav > ul > li > a {
+  position: relative;
+  font-size: 16px;
+  margin: 0 18px;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav > ul > li > a:hover {
+  color: #F85A40;
+}
+
+nav > ul > li > .home-inactive:after {
+  content: "";
+  position: absolute;
+  background-color: #F85A40;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-filter: opacity(0);
+          filter: opacity(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav > ul > li > .home-inactive:hover:after {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+}
+
+nav > ul > li > .home-active {
+  color: #F85A40;
+  border-bottom: 1px solid #F85A40;
+}
+
+nav > ul > .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.144);
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+nav > ul > .search-bar > input {
+  border: none;
+  outline: none;
+  width: 150px;
+}
+
+nav > ul > .search-bar > i {
+  color: #F85A40;
+  cursor: pointer;
+  padding: 0 3px 0 10px;
+}
+
+.banner-area {
+  width: 100%;
+  height: 100vh;
+  top: 70px;
+  background-image: url("../images/back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.banner-area .dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  top: 70px;
+}
+
+.banner-area .dark > .banner-area-text {
+  margin: auto 80px;
+}
+
+.banner-area .dark > .banner-area-text > p {
+  padding-top: 8%;
+  font-size: 45px;
+  color: #fff;
+  font-family: Poppins Light;
+}
+
+.banner-area .dark > .banner-area-text > span {
+  font-family: poppins;
+}
+
+.banner-area .dark > .banner-area-text > .des {
+  font-size: 20px;
+  margin-top: -30px;
+  margin-bottom: 70px;
+}
+
+.banner-area .dark > .banner-area-text > .buttons > a {
+  padding: 14px 28px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.banner-area .dark > .banner-area-text > .buttons > .b1 {
+  background: #fff;
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-area .dark > .banner-area-text > .buttons > .b1:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.banner-area .dark > .banner-area-text > .buttons > .b2 {
+  background: transparent;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner-area .dark > .banner-area-text > .buttons > .b2:hover {
+  background: #fff;
+  color: #000;
+}
+
+.content-area {
+  width: 100%;
+  position: relative;
+  background: #ddd;
+  height: 1500px;
+}
+
+.content-area > h2 {
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
+}
+
+.content-area > p {
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 1054px) {
+  .logo > i {
+    font-size: 25px;
+  }
+  .logo > a {
+    font-size: 25px;
+  }
+  .menu-btn > i {
+    display: block;
+    right: 20px;
+    top: 25px;
+  }
+  nav > ul {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  nav > ul > li {
+    margin: 40px 0;
+  }
+  nav > ul > li > .home-active {
+    border-bottom: none;
+  }
+  nav > ul > li > a {
+    font-size: 20px;
+    display: block;
+  }
+  nav > .search-bar {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav > .search-bar > input {
+    margin: auto;
+    font-size: 22px;
+  }
+  .dark {
+    background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0.137)));
+    background: linear-gradient(to right, black, rgba(0, 0, 0, 0.137));
+  }
+}
+/*# sourceMappingURL=style.css.map */
