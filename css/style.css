@@ -249,24 +249,6 @@ nav > ul > .search-bar > i {
   color: #000;
 }
 
-.content-area {
-  width: 100%;
-  position: relative;
-  background: #ddd;
-  height: 1500px;
-}
-
-.content-area > h2 {
-  letter-spacing: 4px;
-  padding-top: 30px;
-  font-size: 40px;
-  margin: 0;
-}
-
-.content-area > p {
-  line-height: 30px;
-}
-
 @media only screen and (max-width: 1054px) {
   .logo > i {
     font-size: 25px;
